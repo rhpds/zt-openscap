@@ -6,8 +6,6 @@ do
 done
 
 yum remove -y google-rhui-client-rhel8.noarch
-subscription-manager clean
-subscription-manager register --activationkey=${ACTIVATION_KEY} --org=12451665 --force
 
 yum -y install httpd
 
