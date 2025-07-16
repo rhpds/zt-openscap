@@ -9,4 +9,4 @@ systemctl reload firewalld
 systemctl enable --now httpd
 
 # Create rhel user and set password
-sudo useradd -m rhel && echo "rhel:redhat" | sudo chpasswd && sudo usermod -aG wheel rhel
+# sudo useradd -m rhel && echo "rhel:redhat" | sudo chpasswd && sudo usermod -aG wheel rhel
