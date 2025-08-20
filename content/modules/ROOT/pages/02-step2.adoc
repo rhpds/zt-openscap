@@ -6,14 +6,14 @@ datastream file.
 
 [source,bash,run]
 ----
-oscap info /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+oscap info /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
 The output has several profiles including PCI-DSS, [DRAFT] DISA STIG,
 and ACSC Essential Eight.
 
 ____
-[!NOTE] Each profile in the output has a title which describes the
+NOTE: Each profile in the output has a title which describes the
 profile and corresponding Id. For this lab, we are interested in the
 PCI-DSS profile, and the corresponding Id is
 _xccdf_org.ssgproject.content_profile_pci-dss_.
@@ -27,11 +27,11 @@ using the _–profile_ option.
 
 [source,bash,run]
 ----
-oscap info --profile xccdf_org.ssgproject.content_profile_pci-dss /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+oscap info --profile xccdf_org.ssgproject.content_profile_pci-dss /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
 ____
-[!NOTE] The datastream file makes references to remote OVAL content that
+NOTE: The datastream file makes references to remote OVAL content that
 is regularly updated. During scanning, OpenSCAP attempts to download the
 resources locally if _–fetch-remote-resources_ option is provided.
 ____
