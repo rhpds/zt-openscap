@@ -19,5 +19,5 @@ antora:
 tabs:
   - name: ">_ terminal"
     url: /wetty
-  - name: cockpit
-    url: https://cockpit-${guid}.${domain}/
+  - name: "OpenSCAP Report"
+    url: /var/www/html/index.html
