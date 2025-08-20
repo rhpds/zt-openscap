@@ -7,7 +7,7 @@ toolkit that includes policies and tools that allows you to scan and
 evaluate host machines.
 
 ____
-[!NOTE] There are 2 tabs that will be used in this lab - a terminal tab
+NOTE: There are 2 tabs that will be used in this lab - a terminal tab
 for running the scanner (indicated by _Terminal_), and a browser tab for
 viewing the OpenSCAP report (indicated by _OpenSCAP Report_).
 ____
@@ -25,6 +25,13 @@ installed with the command below; it’s safe to run even if the packages
 already exist. OpenSCAP is not dependant on apache server, however it is
 needed in this lab for the purposes of viewing the HTML report generated
 by OpenSCAP.
+
+First ease of use with this lab, we will elevate your user privileges.
+
+[source,bash,run]
+----
+sudo su
+----
 
 [source,bash,run]
 ----
