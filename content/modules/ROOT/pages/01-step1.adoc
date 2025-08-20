@@ -47,8 +47,5 @@ ls /usr/share/xml/scap/ssg/content
 ----
 
 If you are interested in more details about the _openscap_ tool check
-out the command below on your own machine at a later point in time.
+out "man oscap" the command on your own machine at a later point in time.
 
-....
-man oscap
-....
