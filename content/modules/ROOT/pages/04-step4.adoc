@@ -1,11 +1,11 @@
 == Remediating and rescanning against a profile
 
 One of the many failed rules in the scan previously done was related to
-IPSec support. In this step, you will remediate a single failed rule
-related to IPSec support.
+IPSec support. There is a package called libreswan which is a an software implementation of the most widely supported and standardized VPN protocol using "IPsec".
+In this step, you will remediate a single failed rule related to IPSec support.
 
 ____
-[!NOTE] Many of the remediations involve restarting the host, and the
+NOTE: Many of the remediations involve restarting the host, and the
 current demo environment does not support host reboots yet. Thus, this
 lab will focus only on remediating a single issue.
 ____
@@ -18,7 +18,7 @@ attempts to remediate all the failed rules.
 
 [source,bash,run]
 ----
-oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --remediate --fetch-remote-resources --results scan-xccdf-results.xml --rule xccdf_org.ssgproject.content_rule_package_libreswan_installed /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --remediate --fetch-remote-resources --results scan-xccdf-results.xml --rule xccdf_org.ssgproject.content_rule_package_libreswan_installed /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
 To verify that the issue is remediated, re-run the previous command.
@@ -27,7 +27,7 @@ already fixed rule.
 
 [source,bash,run]
 ----
-oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --remediate --fetch-remote-resources --results scan-xccdf-results.xml --rule xccdf_org.ssgproject.content_rule_package_libreswan_installed /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+oscap xccdf eval --profile xccdf_org.ssgproject.content_profile_pci-dss --remediate --fetch-remote-resources --results scan-xccdf-results.xml --rule xccdf_org.ssgproject.content_rule_package_libreswan_installed /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
 The remediation starts but there is no work left to be done.
