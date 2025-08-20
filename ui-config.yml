@@ -20,4 +20,4 @@ tabs:
   - name: ">_ terminal"
     url: /wetty
   - name: "OpenSCAP Report"
-    url: /var/www/html/index.html
+    url: localhost:index.html
