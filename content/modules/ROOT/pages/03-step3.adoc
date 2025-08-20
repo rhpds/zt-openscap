@@ -10,7 +10,7 @@ results file, and the datastream file.
 
 [source,bash,run]
 ----
-oscap xccdf eval --fetch-remote-resources --profile xccdf_org.ssgproject.content_profile_pci-dss --results /tmp/scan-xccdf-results.xml /usr/share/xml/scap/ssg/content/ssg-rhel9-ds.xml
+oscap xccdf eval --fetch-remote-resources --profile xccdf_org.ssgproject.content_profile_pci-dss --results /tmp/scan-xccdf-results.xml /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
 ____
@@ -34,16 +34,7 @@ Report_ tab of this lab interface to view the results (You may need to
 refresh the OpenSCAP Report tab using the refresh button at the
 upper-right of the instruqt tab).
 
-.OpenSCAP-Report
-image::../assets/Openscan-Report-Fail.png[OpenSCAP-Report]
-
 In the report, you will notice that several rules have failed. If you
-scroll to the bottom of the HTML report, you will find a failed rule
-related to _IPSec Support_. If you click the failed rule, you can get
+scroll to the bottom of the HTML report, you can find a failed rule.
+If you click the failed rule, you can get
 more details including the Rule ID, severity and description.
-
-.OpenSCAP-Report-Details
-image::../assets/Openscan-Report-Fail-Details.png[OpenSCAP-Report-Details]
-
-Take a note of the Rule ID for this failed rule as it will be used in
-the next step.
