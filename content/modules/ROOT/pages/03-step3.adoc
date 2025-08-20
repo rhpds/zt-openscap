@@ -29,8 +29,8 @@ for easier readability -
 oscap xccdf generate report /tmp/scan-xccdf-results.xml > /var/www/html/index.html
 ----
 
-Now that the HTML report is generated, you can check the _OpenSCAP
-Report_ tab of this lab interface to view the results (You may need to
+Now that the HTML report is generated, you can check the **_OpenSCAP
+Report_** tab of this lab interface to view the results (You may need to
 refresh the OpenSCAP Report tab using the refresh button at the
 upper-right of the instruqt tab).
 
