@@ -26,12 +26,14 @@ already exist. OpenSCAP is not dependant on apache server, however it is
 needed in this lab for the purposes of viewing the HTML report generated
 by OpenSCAP.
 
-First ease of use with this lab, we will elevate your user privileges.
+For ease of use with this lab, we will elevate your user privileges.
 
 [source,bash,run]
 ----
 sudo su
 ----
+
+Now lets install a few packages.
 
 [source,bash,run]
 ----
