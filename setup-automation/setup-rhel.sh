@@ -8,14 +8,12 @@ echo "Origins = https://cockpit-$(hostname -f|cut -d"-" -f2).apps.$(grep search 
 echo "AllowUnencrypted = true" >> /etc/cockpit/cockpit.conf
 systemctl enable --now cockpit.socket
 
-#yum remove -y google-rhui-client-rhel8.noarch
-
-#yum -y install httpd
+yum -y install httpd
 
 #firewall-cmd --permanent --zone=public --add-service=http
 #systemctl reload firewalld
 
-#systemctl enable --now httpd
+systemctl enable --now httpd
 
 #firewall-cmd --zone=public --add-service=https --permanent
 #firewall-cmd --reload
