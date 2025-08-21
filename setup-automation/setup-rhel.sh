@@ -10,13 +10,13 @@ systemctl enable --now cockpit.socket
 
 yum -y install httpd
 
-#firewall-cmd --permanent --zone=public --add-service=http
-#systemctl reload firewalld
+firewall-cmd --permanent --zone=public --add-service=http
+systemctl reload firewalld
 
 systemctl enable --now httpd
 
-#firewall-cmd --zone=public --add-service=https --permanent
-#firewall-cmd --reload
+firewall-cmd --zone=public --add-service=https --permanent
+firewall-cmd --reload
 
 # Create rhel user and set password
 # sudo useradd -m rhel && echo "rhel:redhat" | sudo chpasswd && sudo usermod -aG wheel rhel
