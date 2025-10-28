@@ -32,7 +32,7 @@ virtualmachines:
         service: cockpit
         targetPort: 9090
         tls: true
-        tls_termination: Edge
+        tls_termination: edge
       - name: rhel-http
         host: rhel
         service: rhel-http
