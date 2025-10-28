@@ -25,7 +25,7 @@ virtualmachines:
           - port: 80
             protocol: TCP
             targetPort: 80
-            name: http
+            name: rhel-http
     routes:
       - name: cockpit
         host: cockpit
@@ -34,7 +34,7 @@ virtualmachines:
         tls: true
         tls_termination: edge
       - name: rhel-http
-        host: rhel
+        host: rhel-http
         service: rhel-http
         targetPort: 80
         tls: true

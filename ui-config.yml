@@ -20,4 +20,4 @@ tabs:
   - name: ">_ terminal"
     url: /wetty
   - name: "OpenSCAP Report"
-    url: https://rhel-${guid}.${domain}/index.html
+    url: https://rhel-http-${guid}.${domain}/index.html
