@@ -20,7 +20,7 @@ virtualmachines:
             protocol: TCP
             targetPort: 9090
             name: cockpit
-      - name: http
+      - name: rhel-http
         ports:
           - port: 80
             protocol: TCP
@@ -33,9 +33,9 @@ virtualmachines:
         targetPort: 9090
         tls: true
         tls_termination: Edge
-      - name: rhel
+      - name: rhel-http
         host: rhel
-        service: http
+        service: rhel-http
         targetPort: 80
         tls: true
-        tls_termination: Edge
+        tls_termination: edge
