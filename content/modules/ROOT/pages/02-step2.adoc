@@ -9,7 +9,7 @@ datastream file.
 oscap info /usr/share/xml/scap/ssg/content/ssg-rhel10-ds.xml
 ----
 
-The output has several profiles including PCI-DSS, [DRAFT] DISA STIG,
+The output has several profiles including PCI-DSS, DISA STIG,
 and ACSC Essential Eight.
 
 ____
