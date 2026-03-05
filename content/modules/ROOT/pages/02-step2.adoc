@@ -1,7 +1,7 @@
 == Displaying available profiles
 
 You can display all available profiles in the datastream file using the
-_openscap info_ command. For this lab, you will be using the RHEL9
+_openscap info_ command. For this lab, you will be using the RHEL10
 datastream file.
 
 [source,bash,run]
